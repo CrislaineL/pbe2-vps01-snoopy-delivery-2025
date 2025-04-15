@@ -8,6 +8,6 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.listen(5001, () => {
-  console.log('API executando em http://localhost:5001');
+app.listen(5004, () => {
+  console.log('API executando em http://localhost:5004');
 });
