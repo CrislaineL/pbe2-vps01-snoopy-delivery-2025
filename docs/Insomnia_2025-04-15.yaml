@@ -1,0 +1,269 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1742299020345
+  modified: 1742299020345
+collection:
+  - name: Snoopy
+    meta:
+      id: fld_210b7a21a37445d6bf04909d05ab7cd1
+      created: 1744743027540
+      modified: 1744743626894
+      sortKey: -1744743027540
+    children:
+      - name: Motorista
+        meta:
+          id: fld_9c60487559254390892389d061dfafb0
+          created: 1744743526371
+          modified: 1744743526371
+          sortKey: -1744743526371
+        children:
+          - url: http://localhost:5001/motoristas/2
+            name: UPDATE
+            meta:
+              id: req_5ea78d6a573c40d680d5e2a11d64875e
+              created: 1744743531317
+              modified: 1744744728913
+              isPrivate: false
+              sortKey: -1744743531317
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome":"Larissa"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/motoristas/1
+            name: DELETE
+            meta:
+              id: req_54bc4c3fcedb4a6bb4223dd81d0298ed
+              created: 1744743536958
+              modified: 1744744744611
+              isPrivate: false
+              sortKey: -1744743536958
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/motoristas
+            name: CREATE
+            meta:
+              id: req_ff077f6a94eb4bb291b6a64d1cebf2b8
+              created: 1744743538662
+              modified: 1744744766159
+              isPrivate: false
+              sortKey: -1744743538662
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"email": "cris@gmail.com",
+                	"nome":"Crislaine"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/motoristas/2
+            name: READONE
+            meta:
+              id: req_2de6ffca66ba4ababb9164819a9ae3e3
+              created: 1744743540329
+              modified: 1744745796268
+              isPrivate: false
+              sortKey: -1744743540329
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/motoristas/
+            name: READ
+            meta:
+              id: req_f93bb93cccad41dd9d5c0672e44413eb
+              created: 1744743541933
+              modified: 1744745802600
+              isPrivate: false
+              sortKey: -1744743541933
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Pedido
+        meta:
+          id: fld_f67dba580f334028bb3acf6163d7f90b
+          created: 1744743623307
+          modified: 1744745522789
+          sortKey: -1744743276955.5
+        children:
+          - name: UPDATE
+            meta:
+              id: req_645536c8ec214776b2efe3e70c1c74c4
+              created: 1744743623309
+              modified: 1744743623309
+              isPrivate: false
+              sortKey: -1744743531317
+            method: PATCH
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: DELETE
+            meta:
+              id: req_d8131530180b47f58e51dbe3e7179fd2
+              created: 1744743623310
+              modified: 1744743623310
+              isPrivate: false
+              sortKey: -1744743536958
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/pedidos
+            name: CREATE
+            meta:
+              id: req_f48ec0086e1d43ba8de817b9b6bdf53e
+              created: 1744743623312
+              modified: 1744747079903
+              isPrivate: false
+              sortKey: -1744743538662
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"id":6,
+                	"valor": 101,
+                	"endereco": "Rua Pará, 206",
+                  "numero": "465",
+                  "cep": "125335-452",
+                  "complemento": "Apto 206"
+                 
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: READONE
+            meta:
+              id: req_1af0ebbac8d1458db0955900404e2068
+              created: 1744743623314
+              modified: 1744743623314
+              isPrivate: false
+              sortKey: -1744743540329
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/pedidos
+            name: READ
+            meta:
+              id: req_b727f147daaa4c408842543f33620b56
+              created: 1744743623315
+              modified: 1744745530091
+              isPrivate: false
+              sortKey: -1744743541933
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1744743014845
+    modified: 1744743014845
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1744743014314
+    modified: 1744743014314
+    isPrivate: false
