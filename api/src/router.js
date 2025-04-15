@@ -1,15 +1,15 @@
 const express = require('express');
-const routes = express.Router();
+const router = express.Router();
 
-const Motorista = require('./controllers/motorista');
-const Pedido = require('./controllers/pedido');
+const Motorista = require('./controllers/motorista.js');
+const Pedido = require('./controllers/pedido.js');
 
-routes.get('/', (req, res) => {
+router.get('/', (req, res) => {
   return res.json({ titulo: 'SNOOPY PetShop Delivery' });
 });
 
 router.post('/motoristas',Motorista.create);
-router.get('/motorista',Motorista.read);
+router.get('/motoristas',Motorista.read);
 router.get('/motoristas/:id',Motorista.readOne);
 router.patch('/motoristas/:id',Motorista.update);
 router.delete('/motoristas/:id',Motorista.remove);
