@@ -19,7 +19,7 @@ model Pedido{
   pedido_id Int @id @default(autoincrement())
   id Int
   data DateTime @default(now())
-  valor Decimal? @db.Decimal(10,2)
+  valor Decimal @db.Decimal(10,2)
   endereco String @db.VarChar(100)
   numero String? @db.VarChar(10)
   cep String @db.VarChar(8)

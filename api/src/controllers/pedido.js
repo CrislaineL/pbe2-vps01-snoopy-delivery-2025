@@ -11,11 +11,17 @@ const create = async (req, res) => {
         res.status(400).json(e).end();
     }
 }
-
 const read = async (req, res) => {
-    const pedidos = await prisma.pedido.findMany();
-    res.json(pedidos);
-}
+    try {
+        const pedidos = await prisma.pedido.findMany();
+        const total = pedidos.reduce((soma, { valor }) => soma + (Number(valor) || 0), 0);
+        
+        return res.json({ pedidos, total });
+    } catch (error) {
+        console.error(error); 
+        return res.status(500).json({ erro: 'Erro ao buscar pedidos' });
+    }
+};
 
 const readOne = async (req, res) => {
     const pedidos = await prisma.pedido.findMany({
